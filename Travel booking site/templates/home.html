@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile Page</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</head>
+<body>
+    <div class="profile-container">
+        <div class="left-panel">
+            <h1>WELCOME BACK!</h1>
+            <p><h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti deserunt saepe incidunt et sint vel perferendis voluptatibus error harum nulla!</h2>
+            </p>
+        </div>
+        <div class="right-panel">
+            <h2 class="profile-heading">User Profile</h2>
+            <form class="profile-form">
+                <div class="form-group">
+                    <input type="text" id="first-name" name="first-name" placeholder="First Name" required disabled>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="last-name" name="last-name" placeholder="Last Name" required disabled>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Email" required disabled>
+                </div>
+                <div class="form-group">
+                    <input type="date" id="dob" name="dob" required disabled>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" name="phone" placeholder="Phone Number" required disabled>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="passport" name="passport" placeholder="Passport Number" required disabled>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="country" name="country" placeholder="Country" required disabled>
+                </div>
+                <div class="form-group">
+                    <button type="button" class="btn edit-btn" onclick="enableEdit()">Edit</button>
+                    <button type="submit" class="btn save-btn">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="../static/js/script.js"></script>
+</body>
+</html>
